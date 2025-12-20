@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TpMaster AI+</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+          colors: {
+            paper: 'var(--color-paper)',
+            ink: 'var(--color-ink)',
+            primary: 'var(--color-primary)',
+            success: 'var(--color-success)',
+            error: 'var(--color-error)',
+            subtle: 'var(--color-subtle)',
+            surface: 'var(--color-surface)',
+            'surface-highlight': 'var(--color-surface-highlight)',
+          },
+          boxShadow: {
+            'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    :root {
+      /* Default Light Theme */
+      --color-paper: #ffffff;
+      --color-ink: #1e293b;
+      --color-primary: #2563eb;
+      --color-success: #16a34a;
+      --color-error: #dc2626;
+      --color-subtle: #94a3b8;
+      --color-surface: #f1f5f9;
+      --color-surface-highlight: #e2e8f0;
+    }
+
+    body {
+      background-color: var(--color-surface);
+      color: var(--color-ink);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
